@@ -17,7 +17,7 @@ public class Podatnik {
     @Column(nullable = false)
     public  String nazwisko;
 
-    @OneToMany(targetEntity = Faktura.class, fetch = FetchType.EAGER, mappedBy = "FakturaId")
+    @OneToMany(mappedBy = "podatnik", fetch = FetchType.EAGER)
     List <Faktura> faktury;
 
     public Podatnik() {
