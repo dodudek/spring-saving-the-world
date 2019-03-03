@@ -33,7 +33,7 @@ public class InitComponent {
             Podatnik podatnik = new Podatnik("Adam" + i, "Kowalski" + i);
             Podatnik podatnikSaved  = podatnikDAO.save(podatnik);
 
-            IntStream.range(0, 10).forEach(j ->{
+            IntStream.range(0, 10000).forEach(j ->{
                 Faktura faktura = new Faktura(3.50, "cos" +j);
                 faktura.setPodatnik(podatnikSaved);
                 faktura = fakturaDAO.save(faktura);

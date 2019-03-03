@@ -14,7 +14,7 @@
 	<name>saving-the-world</name>
 	<description>Demo project for Spring Boot</description>
 
-	<packaging>war</packaging>
+	<!--<packaging>war</packaging>-->
 
 	<properties>
 		<java.version>1.8</java.version>
@@ -30,26 +30,26 @@
 			<artifactId>spring-boot-starter-web</artifactId>
 		</dependency>
 
-		<dependency>
-			<groupId>org.springframework.boot</groupId>
-			<artifactId>spring-boot-starter-tomcat</artifactId>
-			<scope>provided</scope>
-		</dependency>
-
-		<!--HyperSQL-->
 		<!--<dependency>-->
-			<!--<groupId>org.hsqldb</groupId>-->
-			<!--<artifactId>hsqldb</artifactId>-->
-			<!--<scope>runtime</scope>-->
+			<!--<groupId>org.springframework.boot</groupId>-->
+			<!--<artifactId>spring-boot-starter-tomcat</artifactId>-->
+			<!--<scope>provided</scope>-->
 		<!--</dependency>-->
 
-		<!-- https://mvnrepository.com/artifact/com.microsoft.sqlserver/mssql-jdbc -->
+		<!--HyperSQL-->
 		<dependency>
-			<groupId>com.microsoft.sqlserver</groupId>
-			<artifactId>mssql-jdbc</artifactId>
-			<version>6.1.0.jre8</version>
-			<scope>provided</scope>
+			<groupId>org.hsqldb</groupId>
+			<artifactId>hsqldb</artifactId>
+			<scope>runtime</scope>
 		</dependency>
+
+		<!-- https://mvnrepository.com/artifact/com.microsoft.sqlserver/mssql-jdbc -->
+		<!--<dependency>-->
+			<!--<groupId>com.microsoft.sqlserver</groupId>-->
+			<!--<artifactId>mssql-jdbc</artifactId>-->
+			<!--<version>6.1.0.jre8</version>-->
+			<!--<scope>provided</scope>-->
+		<!--</dependency>-->
 
 
 		<!--SWAGGER-->
