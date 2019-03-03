@@ -14,6 +14,8 @@
 	<name>saving-the-world</name>
 	<description>Demo project for Spring Boot</description>
 
+	<packaging>war</packaging>
+
 	<properties>
 		<java.version>1.8</java.version>
 	</properties>
@@ -28,6 +30,12 @@
 			<artifactId>spring-boot-starter-web</artifactId>
 		</dependency>
 
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-tomcat</artifactId>
+			<scope>provided</scope>
+		</dependency>
+
 		<!--HyperSQL-->
 		<!--<dependency>-->
 			<!--<groupId>org.hsqldb</groupId>-->
@@ -40,6 +48,7 @@
 			<groupId>com.microsoft.sqlserver</groupId>
 			<artifactId>mssql-jdbc</artifactId>
 			<version>6.1.0.jre8</version>
+			<scope>provided</scope>
 		</dependency>
 
 
